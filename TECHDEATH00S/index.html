@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technical Death Metal — The Genre Guide — Tundra Toucan</title>
+<meta name="description" content="How to recognize a Technical Death Metal logo: a Genre Guide entry by Gerrit Rijken (Tundra Toucan).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&amp;family=Barlow+Condensed:wght@400;500;600&amp;family=Barlow:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0A0A0A}
+a{color:#E8E4DA}a:hover{color:#D9B35C}
+.hero-title{font-size:120px}
+.mosaic{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 22px}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.stats{display:flex;gap:40px;flex-wrap:wrap;justify-content:center}
+.card .art{transition:border-color .15s ease}
+.card:hover .art{border-color:#D9B35C}
+.card:hover .more{color:#D9B35C}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details[open] .plus{transform:rotate(45deg)}
+.nav{display:flex}
+.mnav{display:none}
+@media (max-width:1024px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:760px){
+.hero-title{font-size:64px}
+.mosaic{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mosaic>*:nth-child(n+4){display:none}
+.steps,.quotes{grid-template-columns:minmax(0,1fr)}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}
+.nav{display:none}
+.mnav{display:inline-block}
+.wrap{padding-left:16px !important;padding-right:16px !important}
+}
+
+.crumbs{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.ehero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start}
+.etitle{font-size:84px}
+.thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.prose{max-width:780px;margin:0 auto}
+.prose p,.prose li{font-size:18px;line-height:1.75;color:#BDB8AC}
+.prose p{margin:0 0 22px}
+.prose strong,.prose b{color:#E8E4DA;font-weight:500}
+.prose em,.prose i{color:#E8E4DA}
+.prose a{color:#D9B35C}
+.prose sup{color:#D9B35C;font-size:12px}
+.prose h1,.prose h2,.prose h3,.prose h4{font-family:'Pirata One',serif;font-weight:400;font-size:40px;line-height:1.05;color:#E8E4DA;margin:56px 0 18px}
+.prose h5,.prose h6{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:#D9B35C;margin:56px 0 18px;padding-top:20px;border-top:1px solid #262522}
+.prose img{display:block;width:100%;height:auto;background:#000;border:1px solid #262522;margin:26px 0;box-sizing:border-box}
+.prose blockquote{margin:0 0 26px;padding:6px 0 6px 22px;border-left:2px solid #D9B35C}
+.prose blockquote p{font-family:'Pirata One',serif;font-size:26px;line-height:1.3;color:#E8E4DA}
+.prose ol{list-style:none;padding:0;margin:0 0 26px;counter-reset:pt}
+.prose ol>li{counter-increment:pt;position:relative;padding-left:58px;margin:0 0 28px}
+.prose ol>li::before{content:counter(pt,upper-roman) ".";position:absolute;left:0;top:-6px;font-family:'Pirata One',serif;font-size:32px;color:#D9B35C}
+.prose ul{list-style:none;padding:0;margin:0 0 30px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.prose ul>li{border:1px solid #262522;padding:16px 16px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:19px;letter-spacing:.04em;text-transform:uppercase;color:#E8E4DA;line-height:1.2}
+.prose ul ul{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 0 0}
+.prose ul ul>li{border:0;padding:0;font-size:14px;letter-spacing:.12em}
+.prose ul ul a{color:#A8A397;text-decoration:none}
+.prose ul ul a:hover{color:#D9B35C}
+.prose details.more{margin:0 0 26px;border-top:1px solid #262522;border-bottom:1px solid #262522}
+.prose details.more>summary{cursor:pointer;list-style:none;padding:16px 0;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:#D9B35C}
+.prose details.more>summary::-webkit-details-marker{display:none}
+.prose details.more>summary::after{content:" +"}
+.prose details.more[open]>summary::after{content:" –"}
+.prose details:not(.more)>summary{cursor:pointer;color:#D9B35C;font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:10px 0}
+.prose .ref{font-size:14px;line-height:1.6;color:#8E8A80;margin:0 0 8px}
+.prose .ref em{color:#A8A397}
+.prose code{font-family:inherit}
+.related{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:0 0 30px}
+.rel{display:flex;flex-direction:column;gap:8px;text-decoration:none}
+.rel .rimg{display:block;aspect-ratio:1;background:#000;border:1px solid #262522;overflow:hidden}
+.rel img{display:block;width:100%;height:100%;object-fit:cover;margin:0;border:0}
+.rel .rname{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#E8E4DA;line-height:1.2}
+.rel:hover .rimg{border-color:#D9B35C}
+.pn{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+@media (max-width:760px){
+.ehero,.pn{grid-template-columns:minmax(0,1fr);gap:32px}
+.etitle{font-size:48px}
+.prose ul{grid-template-columns:minmax(0,1fr)}
+.related{grid-template-columns:repeat(3,minmax(0,1fr))}
+.prose ol>li{padding-left:44px}
+}
+</style>
+</head>
+<body id="top">
+<div style="background: #0A0A0A; color: #E8E4DA; font-family: 'Barlow', sans-serif; font-size: 16px; min-height: 100vh">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #262522">
+<a href="/" aria-label="Tundra Toucan home" style="display: block; line-height: 0"><img src="/assets/img/projects/proj-3/toucan2.png" alt="Tundra Toucan logo" style="display: block; width: 150px; height: auto"></a>
+<nav class="nav" style="gap: 28px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; align-items: center">
+<a href="/" style="text-decoration: none; padding: 12px 0">Home</a>
+<a href="/GENREGUIDE/" style="text-decoration: none; padding: 12px 0; color: #D9B35C">Genre guide</a>
+<a href="/#science" style="text-decoration: none; padding: 12px 0">Science of logos</a>
+<a href="/#commission" style="text-decoration: none; padding: 12px 18px; border: 1px solid #D9B35C; color: #D9B35C">Commission</a>
+</nav>
+<a href="/" class="mnav" style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; padding: 12px 0">← Home</a>
+</header>
+<div class="crumbs" style="padding: 28px 0 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8A397"><a href="/GENREGUIDE/" style="text-decoration: none; color: #D9B35C; padding: 8px 0">← The Genre Guide</a><span>/</span><span>Death Metal</span></div>
+<section class="ehero" style="padding: 40px 0 0">
+<div style="display: flex; flex-direction: column; gap: 10px"><div style="position: relative; background: #000000; border: 1px solid #262522; aspect-ratio: 1; overflow: hidden"><img src="/assets/img/projects/proj-9/tech00.jpg" alt="Technical Death Metal sample logo" style="display: block; width: 100%; height: 100%; object-fit: cover"><span style="position: absolute; left: 12px; top: 10px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.14em; color: #D9B35C">No. 14</span></div></div>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.3em; text-transform: uppercase; color: #A8A397">Death Metal · Specimen No. 14</p>
+<h1 class="etitle" style="margin: 0; font-family: 'Pirata One', serif; font-weight: 400; line-height: 0.95">Technical Death Metal</h1>
+<div style="display: flex; flex-direction: column; gap: 12px; padding-top: 22px; border-top: 1px solid #262522"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.16em; text-transform: uppercase; color: #D9B35C">Telltale signs</span><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 19px; line-height: 1.4; color: #E8E4DA"><li style="display: flex; gap: 10px"><span style="color: #D9B35C">†</span><span>Illustrator Pen-tool letters</span></li><li style="display: flex; gap: 10px"><span style="color: #D9B35C">†</span><span>a Bézier look</span></li></ul></div>
+</div>
+</section>
+<article class="prose" style="padding: 80px 0 0"><p>A hard-and-fast rule in Death Metal aesthetics is that the more technical the music, the less sophisticated the logo. This is exemplified in Technical Death Metal, a genre whose musicians and artists mix "fast, virtuosic guitar riffs and solos of varying tempos and time signature changes with prevalent drumming and frequent blast beats."<sup>1</sup> It's like they opt to convey an impression of modesty (or perhaps false modesty), often leading to conversations like this:</p>
+<ul>
+<li>"I can play with my eyes closed!"</li>
+<li>"Cool! But did you also have to do that logo with your eyes closed?"</li>
+</ul>
+<p>It is worthwhile pointing out here that you can often place a band in this genre somewhere in time just by looking at the band's logo. In the 1990s and before, Tech Death bands had "analogously" hand-drawn logos; post-2000s, these logos have been done mostly digitally -- and it shows.</p>
+<h5>Some Technical Death Metal bands to check out:</h5>
+<ul>
+<li>Necrophagist    
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Necrophagist/207" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/78oF7KjxHMJHtiwgc2I3rw?si=217088ad1c56485e" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+
+<li>Nile
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Nile/139" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/62hzJcOwMg68h6wBimZALA?si=2171e7e53882471b" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+
+<li>Origin
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Origin/79" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/13QMlehyxaD8TjZeJZCjan?si=b662eeee29b44514" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+</ul>
+
+<h2>Post-2000s Tech Death</h2>
+<p>It's fairly easy to recognize a post-2000s Technical Death band from a 1990s band in the same genre. For some reason wholly unknown to me, the former is likely to have a logo that they proudly put on their shirts -- even though it doesn't really look good. It's always like these logos were done by a novice who played with <strong>Illustrator</strong> and who is not quite familiar yet with Illustrator's <strong>Pen tool</strong>. The result inevitably is that all these logos have a <strong>"Bézier" look</strong> to them; and this is the reason they <em>never</em> look good. </p>
+<p>When I originally wrote this entry a few weeks ago, I did so half-jokingly. It was based on my own personal observation. Little did I know then that I was right on the money. </p>
+<p>While I was just browing on the Internet looking for new ideas and references, I stumbled upon a dissertation on genre and expression in Extreme Metal music, which has a paragraph in it on band logos and font styles and that specifically deals with genre and periodization. I therefore add it here in full, as it perfectly backs up my idea that things went down the shitter after the turn of the millennium:</p>
+<blockquote>
+<p>"... a trend can be observed beginning the mid-1990s of bands from multiple extreme metal subgenres retiring their older, hand-drawn logos for a more legible, digital look. Whether these transformations are in some cases marketing decisions to attract larger audiences or simply the results of computer illustration software making professional typography more common, they have the cumulative effect of antiquating the older, DIY-style logos that were commonplace during the 1980s. In terms of genre, what this does is create a set of visual connotations for DIY logos that they did not previously carry. A present-day recording with a band logo similar to the [original] Necrophagia logo ... would take on an 'old school' aura or be associated with older genres of metal. To put it in another way, someone browsing in a used CD store for death metal would likely associate such a logo with the thrash-inflected death metal of the late 1980s or early '90s rather than the more technical styles that gained popularity around the turn of the millennium. Another consequence is that fans who are accustomed to newer styles of death metal, along with their digitally-illustrated logos, are likely to similarly associated DIY-inflected subgenres such as grindcore with an older era. Thus that same death metal shopper might glance upon Pig Destroyer's <em>Phantom Limb</em> (2007), associate the band's cover art and logo with metal of the 1980s, and later make a comment to someone about 'old-school grindcore.' In this way, something a subtle and seemingly incidental as a logo font can contribute to the historical process whereby musical genres are retrospectively codified and separated from one another within the popular imagination, both in terms of trait-based discussions and historical narratives."<sup>2</sup></p>
+</blockquote>
+<ul>
+<li>Archspire   
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Archspire/3540326229" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/4K1yqd68vWmDXFwXAqW35d?si=a869e307d56a4440" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+
+<li>Arsis
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Arsis/5819" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/2IH1qycKGVOBKHyR0IrYPW?si=c2737e82a6bc49ff" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+
+<li>Revocation
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Revocation/78107" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/artist/4I9kzJ3Ew3qPoN66UPJUl3?si=da8381b941924658" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+</ul>
+
+<h5>Related (sub)genre(s):</h5>
+<div class="related"><a href="/DEATHMETAL/" class="rel"><span class="rimg"><img src="/assets/img/projects/proj-9/brutal.jpg" alt="Death Metal sample logo" loading="lazy"></span><span class="rname">Death Metal</span></a><a href="/PROGRESSIVE/" class="rel"><span class="rimg"><img src="/assets/img/projects/proj-9/progressive.jpg" alt="Progressive sample logo" loading="lazy"></span><span class="rname">Progressive</span></a><a href="/TECHDEATH90S/" class="rel"><span class="rimg"><img src="/assets/img/projects/proj-9/tech901.jpg" alt="Tech Death (1990s) sample logo" loading="lazy"></span><span class="rname">Tech Death (1990s)</span></a></div>
+
+<h5>Reference(s):</h5>
+<p class="ref">[1] M. Unger. <em>Sound, Symbol, Sociality: The Aesthetic Experience of Extreme Metal Music</em>, p. 20, 2016.</p>
+<p class="ref">[2] E.T. Smialek. <em>Genre and Expression in Extreme Metal Music, ca. 1990-2015</em>, pp. 155-157, 2015.</p></article>
+<nav class="pn" aria-label="More entries" style="padding: 96px 0 0"><a href="/TECHDEATH90S/" style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start; text-align: left; padding: 22px; border: 1px solid #262522; text-decoration: none"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8A397">← Previous entry</span><span style="font-family: 'Pirata One', serif; font-size: 30px; line-height: 1.1">Tech Death (1990s)</span></a><a href="/RASTERIZEDDEATH/" style="display: flex; flex-direction: column; gap: 6px; align-items: flex-end; text-align: right; padding: 22px; border: 1px solid #262522; text-decoration: none"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8A397">Next entry →</span><span style="font-family: 'Pirata One', serif; font-size: 30px; line-height: 1.1">Rasterized Death Metal</span></a></nav>
+<footer style="margin-top: 128px; padding: 88px 0 48px; border-top: 1px solid #262522; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px">
+<h2 style="margin: 0; font-family: 'Pirata One', serif; font-weight: 400; font-size: 64px; line-height: 1">Need a logo that speaks the right dialect?</h2>
+<p style="margin: 0; max-width: 560px; font-size: 18px; line-height: 1.6; color: #BDB8AC">Whether you play war metal or blackgaze, I'll draw you a logo your scene will recognize at a glance.</p>
+<a href="/#commission" style="padding: 16px 30px; background: #D9B35C; color: #0A0A0A; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.12em; text-transform: uppercase">Commission a logo</a>
+<div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; padding-top: 48px; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: #A8A397"><a href="/ILLEGIBLESEMANTICS/" style="padding: 10px 0">Read the paper</a><a href="https://www.youtube.com/watch?v=BZOdIhU-mrA" target="_blank" rel="noopener" style="padding: 10px 0">Watch the talk</a><a href="https://instagram.com/tundratoucan" target="_blank" rel="noopener" style="padding: 10px 0">Instagram</a><span style="padding: 10px 0">© Gerrit Rijken · Tundra Toucan</span></div>
+</footer>
+</div>
+</div>
+</body>
+</html>

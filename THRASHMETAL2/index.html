@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thrash Metal — The Genre Guide — Tundra Toucan</title>
+<meta name="description" content="How to recognize a Thrash Metal logo: a Genre Guide entry by Gerrit Rijken (Tundra Toucan).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&amp;family=Barlow+Condensed:wght@400;500;600&amp;family=Barlow:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0A0A0A}
+a{color:#E8E4DA}a:hover{color:#D9B35C}
+.hero-title{font-size:120px}
+.mosaic{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 22px}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.stats{display:flex;gap:40px;flex-wrap:wrap;justify-content:center}
+.card .art{transition:border-color .15s ease}
+.card:hover .art{border-color:#D9B35C}
+.card:hover .more{color:#D9B35C}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details[open] .plus{transform:rotate(45deg)}
+.nav{display:flex}
+.mnav{display:none}
+@media (max-width:1024px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:760px){
+.hero-title{font-size:64px}
+.mosaic{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mosaic>*:nth-child(n+4){display:none}
+.steps,.quotes{grid-template-columns:minmax(0,1fr)}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}
+.nav{display:none}
+.mnav{display:inline-block}
+.wrap{padding-left:16px !important;padding-right:16px !important}
+}
+
+.crumbs{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.ehero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start}
+.etitle{font-size:84px}
+.thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.prose{max-width:780px;margin:0 auto}
+.prose p,.prose li{font-size:18px;line-height:1.75;color:#BDB8AC}
+.prose p{margin:0 0 22px}
+.prose strong,.prose b{color:#E8E4DA;font-weight:500}
+.prose em,.prose i{color:#E8E4DA}
+.prose a{color:#D9B35C}
+.prose sup{color:#D9B35C;font-size:12px}
+.prose h1,.prose h2,.prose h3,.prose h4{font-family:'Pirata One',serif;font-weight:400;font-size:40px;line-height:1.05;color:#E8E4DA;margin:56px 0 18px}
+.prose h5,.prose h6{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:#D9B35C;margin:56px 0 18px;padding-top:20px;border-top:1px solid #262522}
+.prose img{display:block;width:100%;height:auto;background:#000;border:1px solid #262522;margin:26px 0;box-sizing:border-box}
+.prose blockquote{margin:0 0 26px;padding:6px 0 6px 22px;border-left:2px solid #D9B35C}
+.prose blockquote p{font-family:'Pirata One',serif;font-size:26px;line-height:1.3;color:#E8E4DA}
+.prose ol{list-style:none;padding:0;margin:0 0 26px;counter-reset:pt}
+.prose ol>li{counter-increment:pt;position:relative;padding-left:58px;margin:0 0 28px}
+.prose ol>li::before{content:counter(pt,upper-roman) ".";position:absolute;left:0;top:-6px;font-family:'Pirata One',serif;font-size:32px;color:#D9B35C}
+.prose ul{list-style:none;padding:0;margin:0 0 30px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.prose ul>li{border:1px solid #262522;padding:16px 16px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:19px;letter-spacing:.04em;text-transform:uppercase;color:#E8E4DA;line-height:1.2}
+.prose ul ul{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 0 0}
+.prose ul ul>li{border:0;padding:0;font-size:14px;letter-spacing:.12em}
+.prose ul ul a{color:#A8A397;text-decoration:none}
+.prose ul ul a:hover{color:#D9B35C}
+.prose details.more{margin:0 0 26px;border-top:1px solid #262522;border-bottom:1px solid #262522}
+.prose details.more>summary{cursor:pointer;list-style:none;padding:16px 0;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:#D9B35C}
+.prose details.more>summary::-webkit-details-marker{display:none}
+.prose details.more>summary::after{content:" +"}
+.prose details.more[open]>summary::after{content:" –"}
+.prose details:not(.more)>summary{cursor:pointer;color:#D9B35C;font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:10px 0}
+.prose .ref{font-size:14px;line-height:1.6;color:#8E8A80;margin:0 0 8px}
+.prose .ref em{color:#A8A397}
+.prose code{font-family:inherit}
+.related{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:0 0 30px}
+.rel{display:flex;flex-direction:column;gap:8px;text-decoration:none}
+.rel .rimg{display:block;aspect-ratio:1;background:#000;border:1px solid #262522;overflow:hidden}
+.rel img{display:block;width:100%;height:100%;object-fit:cover;margin:0;border:0}
+.rel .rname{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#E8E4DA;line-height:1.2}
+.rel:hover .rimg{border-color:#D9B35C}
+.pn{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+@media (max-width:760px){
+.ehero,.pn{grid-template-columns:minmax(0,1fr);gap:32px}
+.etitle{font-size:48px}
+.prose ul{grid-template-columns:minmax(0,1fr)}
+.related{grid-template-columns:repeat(3,minmax(0,1fr))}
+.prose ol>li{padding-left:44px}
+}
+</style>
+</head>
+<body id="top">
+<div style="background: #0A0A0A; color: #E8E4DA; font-family: 'Barlow', sans-serif; font-size: 16px; min-height: 100vh">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #262522">
+<a href="/" aria-label="Tundra Toucan home" style="display: block; line-height: 0"><img src="/assets/img/projects/proj-3/toucan2.png" alt="Tundra Toucan logo" style="display: block; width: 150px; height: auto"></a>
+<nav class="nav" style="gap: 28px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; align-items: center">
+<a href="/" style="text-decoration: none; padding: 12px 0">Home</a>
+<a href="/GENREGUIDE/" style="text-decoration: none; padding: 12px 0; color: #D9B35C">Genre guide</a>
+<a href="/#science" style="text-decoration: none; padding: 12px 0">Science of logos</a>
+<a href="/#commission" style="text-decoration: none; padding: 12px 18px; border: 1px solid #D9B35C; color: #D9B35C">Commission</a>
+</nav>
+<a href="/" class="mnav" style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; padding: 12px 0">← Home</a>
+</header>
+<div class="crumbs" style="padding: 28px 0 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8A397"><a href="/GENREGUIDE/" style="text-decoration: none; color: #D9B35C; padding: 8px 0">← The Genre Guide</a><span>/</span><span>Thrash &amp; Speed</span></div>
+<section class="ehero" style="padding: 40px 0 0">
+<div style="display: flex; flex-direction: column; gap: 10px"><div style="position: relative; background: #000000; border: 1px solid #262522; aspect-ratio: 1; overflow: hidden"><img src="/assets/img/projects/proj-9/teutonic.jpg" alt="Thrash Metal sample logo" style="display: block; width: 100%; height: 100%; object-fit: cover"><span style="position: absolute; left: 12px; top: 10px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.14em; color: #D9B35C">No. 19</span></div></div>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.3em; text-transform: uppercase; color: #A8A397">Thrash &amp; Speed · Specimen No. 19</p>
+<h1 class="etitle" style="margin: 0; font-family: 'Pirata One', serif; font-weight: 400; line-height: 0.95">Thrash Metal</h1>
+<div style="display: flex; flex-direction: column; gap: 12px; padding-top: 22px; border-top: 1px solid #262522"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.16em; text-transform: uppercase; color: #D9B35C">Telltale signs</span><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 19px; line-height: 1.4; color: #E8E4DA"><li style="display: flex; gap: 10px"><span style="color: #D9B35C">†</span><span>extremely angular, fixed angles</span></li><li style="display: flex; gap: 10px"><span style="color: #D9B35C">†</span><span>less symmetry</span></li><li style="display: flex; gap: 10px"><span style="color: #D9B35C">†</span><span>blocky letters</span></li></ul></div>
+</div>
+</section>
+<article class="prose" style="padding: 80px 0 0"><p>Abrasive. Loud. Extremely fast yet still precise, with impeccable sense of timing. If judging by these words alone, it may sound like I'm describing a Dutch olympian -- a speed skater or a cyclist, perhaps. But we're talking music, aren't we? I'm talking Thrash Metal, of course, which means I'm talking yet another extreme subgenre of Heavy Metal. </p>
+<p>Oh, and yes, it's "Thrash," not "Trash." Though some bands in this and adjacent genres are absolutely, undeniably, unapolgetically trash. (Thrashcore, anyone?) This is important to note because generally Thrash bands write music that touches the listener's emotions, and what's more they sing about "serious political and social issues, allowing [them] to avoid the perceived superficiality found in more commercial metal music."<sup>1</sup> </p>
+<p>Of course, some Thrash lyrics tend to be much smarter than others. Take <strong>Dark Angel</strong>'s lyrics, for example: Gene Hoglan, the band's drummer who wrote them, "used a lot of big SAT words that made you run for the dictionary; a line from [Darkness Descends's] title track, for example, went, 'Inimical powers against humankind, this charnel house ensanguined.'"<sup>2</sup> His reasoning was simple: "There's no reason why we can't show a modicum of intelligence with our lyrics." Yeah well Gene, try telling that to the German thrashers of <strong>Tankard</strong> who have been singing about <a href="https://open.spotify.com/track/36L4XUmohtFFNTvs1WbBpe?si=21f1decf235a4dfe" target="_blank" rel="noopener"><span>a girl called Cerveza</span></a>, <a href="https://open.spotify.com/track/667pyBtcqvVZSVzDz1HcnA?si=cdbd61664d4e455c" target="_blank" rel="noopener"><span>needing money for beer</span></a>, and <a href="https://open.spotify.com/track/3sHhYuUlTBCiRNbJZwBeZy?si=d8bb8ae0deea4930" target="_blank" rel="noopener"><span>metal lady boys</span></a> since 1983, with no signs of changing lyrical preoccupations soon. I don't know why but I have an inkling their next single is called "Need money for a metal prostitute called Corona." (You heard it here first!)</p>
+<p>As a scene, it developed "as a 'fundamentalist' reaction against a perceived decadence found in more mainstream metal."<sup>3</sup> This happened simultaneously in different parts of the world, in different countries (Britain, Germany, Latin America, and the US), from where it developed out of different genres (most notably NWOBHM and Punk Hardcore), and this is why there is a variety of styles within the Thrash genre -- one that is in large part determined by bands' locality. </p>
+<p>Of course, Thrash Metal has its own aesthetics, too. Generally speaking, Thrash logos tend to have <strong>straight, sharp edges</strong> that reflect the tightness and controlled nature of the music's rhythms.<sup>4</sup> (You know, tight and controlled ... like a murderer carving their name in a victim's chest.<sup>5</sup> Don't give me that look. How else is one supposed to purify Metal from commercialism?) Indeed, some exceptions aside, there is no softness to be found in them whatsoever -- there is only hardness.</p>
+<h2>Teutonic Thrash Metal</h2>
+<p>As a genre, Teutonic Thrash Metal has a distinct German character, and a few notable exceptions aside, this is reflected in the kind of logos bands in this genre have. Like 1980s US Thrash logos, Teutonic Thrash logos are <strong>extremely angular, with fixed angles</strong>, but with <strong>less emphasis on symmetry</strong>, and the letters are generally <strong>more blocky in shape</strong>. With this, German Thrashers seem to be saying, "We believe in robustness over sophistication, and function over form." Which is all fine and dandy until you try to put a cube through a round hole. It's probably why you've never heard of <strong>Kreator</strong> ... while you no doubt own a copy of the <strong>"Black"</strong> album.</p>
+<h5>Some Teutonic Thrash bands to check out:</h5>
+<ul>
+<li>Destruction 
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Destruction/155" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/1VHQF5TWJ8i0KCsMLhOaNI?si=533c93dc86f94abb" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+
+<li>Kreator
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Kreator/157" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/712ukvLX20rwHuTWg7Gcjb?si=b8ad6738e0f24100" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+
+<li>Sodom
+<ul>
+<li><a href="https://www.metal-archives.com/bands/sodom/419" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/3lMVtX2zN22nm30jGVoOpT?si=d42d94d609184209" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+</ul>
+
+<h5>Related (sub)genre(s):</h5>
+<div class="related"><a href="/BLACKENEDTHRASH/" class="rel"><span class="rimg"><img src="/assets/img/projects/proj-9/blackenedthrash.jpg" alt="Blackened Thrash sample logo" loading="lazy"></span><span class="rname">Blackened Thrash</span></a><a href="/USTHRASH/" class="rel"><span class="rimg"><img src="/assets/img/projects/proj-9/usthrash.jpg" alt="US Thrash sample logo" loading="lazy"></span><span class="rname">US Thrash</span></a></div>
+
+<h5>Reference(s):</h5>
+<p class="ref">[1] M.A. Mengerink.  Hitler, the Holocaust, and Heavy Metal Music: Holocaust Memory and Representation in the Heavy Metal Subculture, 1980-Present. In S.T. Horsfall, J.-M. Meij, and M. Probtsfield, ed. <em>Music Sociology: Examining the Role of Music in Social Life</em>, pp. 178-179, 2013.</p>
+<p class="ref">[2] D. Konow. LA Weekly: Drummer Gene Hohlan Was Just 18 When He Recorded an '80s Thrash Classic. https://www.laweekly.com/drummer-gene-hoglan-was-just-18-when-he-recorded-an-80s-thrash-classic/, 2017.</p>
+<p class="ref">[3] Mengerink. 2013.</p>
+<p class="ref">[4] L. Stinson. Wired: The Beauty and Total Illegibility of Extreme Metal Logos. https://www.wired.com/2015/10/the-beauty-and-total-illegibility-of-extreme-metal-logos, 2015.</p>
+<p class="ref">[5] D. Lombardo. Loudwire: Dave Lombardo - Wikipedia: Fact or Fiction? https://www.youtube.com/watch?v=LKppPspVNDs, 2015. </p></article>
+<nav class="pn" aria-label="More entries" style="padding: 96px 0 0"><a href="/THRASHMETAL3/" style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start; text-align: left; padding: 22px; border: 1px solid #262522; text-decoration: none"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8A397">← Previous entry</span><span style="font-family: 'Pirata One', serif; font-size: 30px; line-height: 1.1">Bay Area Thrash</span></a><a href="/SPEEDMETAL/" style="display: flex; flex-direction: column; gap: 6px; align-items: flex-end; text-align: right; padding: 22px; border: 1px solid #262522; text-decoration: none"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8A397">Next entry →</span><span style="font-family: 'Pirata One', serif; font-size: 30px; line-height: 1.1">Speed Metal</span></a></nav>
+<footer style="margin-top: 128px; padding: 88px 0 48px; border-top: 1px solid #262522; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px">
+<h2 style="margin: 0; font-family: 'Pirata One', serif; font-weight: 400; font-size: 64px; line-height: 1">Need a logo that speaks the right dialect?</h2>
+<p style="margin: 0; max-width: 560px; font-size: 18px; line-height: 1.6; color: #BDB8AC">Whether you play war metal or blackgaze, I'll draw you a logo your scene will recognize at a glance.</p>
+<a href="/#commission" style="padding: 16px 30px; background: #D9B35C; color: #0A0A0A; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.12em; text-transform: uppercase">Commission a logo</a>
+<div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; padding-top: 48px; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: #A8A397"><a href="/ILLEGIBLESEMANTICS/" style="padding: 10px 0">Read the paper</a><a href="https://www.youtube.com/watch?v=BZOdIhU-mrA" target="_blank" rel="noopener" style="padding: 10px 0">Watch the talk</a><a href="https://instagram.com/tundratoucan" target="_blank" rel="noopener" style="padding: 10px 0">Instagram</a><span style="padding: 10px 0">© Gerrit Rijken · Tundra Toucan</span></div>
+</footer>
+</div>
+</div>
+</body>
+</html>

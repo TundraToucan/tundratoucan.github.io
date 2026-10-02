@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pirate Metal — The Genre Guide — Tundra Toucan</title>
+<meta name="description" content="How to recognize a Pirate Metal logo: a Genre Guide entry by Gerrit Rijken (Tundra Toucan).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&amp;family=Barlow+Condensed:wght@400;500;600&amp;family=Barlow:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0A0A0A}
+a{color:#E8E4DA}a:hover{color:#D9B35C}
+.hero-title{font-size:120px}
+.mosaic{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 22px}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.stats{display:flex;gap:40px;flex-wrap:wrap;justify-content:center}
+.card .art{transition:border-color .15s ease}
+.card:hover .art{border-color:#D9B35C}
+.card:hover .more{color:#D9B35C}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details[open] .plus{transform:rotate(45deg)}
+.nav{display:flex}
+.mnav{display:none}
+@media (max-width:1024px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:760px){
+.hero-title{font-size:64px}
+.mosaic{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mosaic>*:nth-child(n+4){display:none}
+.steps,.quotes{grid-template-columns:minmax(0,1fr)}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}
+.nav{display:none}
+.mnav{display:inline-block}
+.wrap{padding-left:16px !important;padding-right:16px !important}
+}
+
+.crumbs{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.ehero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start}
+.etitle{font-size:84px}
+.thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.prose{max-width:780px;margin:0 auto}
+.prose p,.prose li{font-size:18px;line-height:1.75;color:#BDB8AC}
+.prose p{margin:0 0 22px}
+.prose strong,.prose b{color:#E8E4DA;font-weight:500}
+.prose em,.prose i{color:#E8E4DA}
+.prose a{color:#D9B35C}
+.prose sup{color:#D9B35C;font-size:12px}
+.prose h1,.prose h2,.prose h3,.prose h4{font-family:'Pirata One',serif;font-weight:400;font-size:40px;line-height:1.05;color:#E8E4DA;margin:56px 0 18px}
+.prose h5,.prose h6{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:#D9B35C;margin:56px 0 18px;padding-top:20px;border-top:1px solid #262522}
+.prose img{display:block;width:100%;height:auto;background:#000;border:1px solid #262522;margin:26px 0;box-sizing:border-box}
+.prose blockquote{margin:0 0 26px;padding:6px 0 6px 22px;border-left:2px solid #D9B35C}
+.prose blockquote p{font-family:'Pirata One',serif;font-size:26px;line-height:1.3;color:#E8E4DA}
+.prose ol{list-style:none;padding:0;margin:0 0 26px;counter-reset:pt}
+.prose ol>li{counter-increment:pt;position:relative;padding-left:58px;margin:0 0 28px}
+.prose ol>li::before{content:counter(pt,upper-roman) ".";position:absolute;left:0;top:-6px;font-family:'Pirata One',serif;font-size:32px;color:#D9B35C}
+.prose ul{list-style:none;padding:0;margin:0 0 30px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.prose ul>li{border:1px solid #262522;padding:16px 16px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:19px;letter-spacing:.04em;text-transform:uppercase;color:#E8E4DA;line-height:1.2}
+.prose ul ul{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 0 0}
+.prose ul ul>li{border:0;padding:0;font-size:14px;letter-spacing:.12em}
+.prose ul ul a{color:#A8A397;text-decoration:none}
+.prose ul ul a:hover{color:#D9B35C}
+.prose details.more{margin:0 0 26px;border-top:1px solid #262522;border-bottom:1px solid #262522}
+.prose details.more>summary{cursor:pointer;list-style:none;padding:16px 0;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:#D9B35C}
+.prose details.more>summary::-webkit-details-marker{display:none}
+.prose details.more>summary::after{content:" +"}
+.prose details.more[open]>summary::after{content:" –"}
+.prose details:not(.more)>summary{cursor:pointer;color:#D9B35C;font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:10px 0}
+.prose .ref{font-size:14px;line-height:1.6;color:#8E8A80;margin:0 0 8px}
+.prose .ref em{color:#A8A397}
+.prose code{font-family:inherit}
+.related{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:0 0 30px}
+.rel{display:flex;flex-direction:column;gap:8px;text-decoration:none}
+.rel .rimg{display:block;aspect-ratio:1;background:#000;border:1px solid #262522;overflow:hidden}
+.rel img{display:block;width:100%;height:100%;object-fit:cover;margin:0;border:0}
+.rel .rname{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#E8E4DA;line-height:1.2}
+.rel:hover .rimg{border-color:#D9B35C}
+.pn{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+@media (max-width:760px){
+.ehero,.pn{grid-template-columns:minmax(0,1fr);gap:32px}
+.etitle{font-size:48px}
+.prose ul{grid-template-columns:minmax(0,1fr)}
+.related{grid-template-columns:repeat(3,minmax(0,1fr))}
+.prose ol>li{padding-left:44px}
+}
+</style>
+</head>
+<body id="top">
+<div style="background: #0A0A0A; color: #E8E4DA; font-family: 'Barlow', sans-serif; font-size: 16px; min-height: 100vh">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #262522">
+<a href="/" aria-label="Tundra Toucan home" style="display: block; line-height: 0"><img src="/assets/img/projects/proj-3/toucan2.png" alt="Tundra Toucan logo" style="display: block; width: 150px; height: auto"></a>
+<nav class="nav" style="gap: 28px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; align-items: center">
+<a href="/" style="text-decoration: none; padding: 12px 0">Home</a>
+<a href="/GENREGUIDE/" style="text-decoration: none; padding: 12px 0; color: #D9B35C">Genre guide</a>
+<a href="/#science" style="text-decoration: none; padding: 12px 0">Science of logos</a>
+<a href="/#commission" style="text-decoration: none; padding: 12px 18px; border: 1px solid #D9B35C; color: #D9B35C">Commission</a>
+</nav>
+<a href="/" class="mnav" style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; padding: 12px 0">← Home</a>
+</header>
+<div class="crumbs" style="padding: 28px 0 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8A397"><a href="/GENREGUIDE/" style="text-decoration: none; color: #D9B35C; padding: 8px 0">← The Genre Guide</a><span>/</span><span>Folk &amp; Oddities</span></div>
+<section class="ehero" style="padding: 40px 0 0">
+<div style="display: flex; flex-direction: column; gap: 10px"><div style="position: relative; background: #000000; border: 1px solid #262522; aspect-ratio: 1; overflow: hidden"><img src="/assets/img/projects/proj-9/pirate.jpg" alt="Pirate Metal sample logo" style="display: block; width: 100%; height: 100%; object-fit: cover"><span style="position: absolute; left: 12px; top: 10px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.14em; color: #D9B35C">No. 50</span></div></div>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.3em; text-transform: uppercase; color: #A8A397">Folk &amp; Oddities · Specimen No. 50</p>
+<h1 class="etitle" style="margin: 0; font-family: 'Pirata One', serif; font-weight: 400; line-height: 0.95">Pirate Metal</h1>
+<div style="display: flex; flex-direction: column; gap: 12px; padding-top: 22px; border-top: 1px solid #262522"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.16em; text-transform: uppercase; color: #D9B35C">Telltale signs</span><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 19px; line-height: 1.4; color: #E8E4DA"><li style="display: flex; gap: 10px"><span style="color: #D9B35C">†</span><span>skull and crossbones</span></li><li style="display: flex; gap: 10px"><span style="color: #D9B35C">†</span><span>a curved sword</span></li></ul></div>
+</div>
+</section>
+<article class="prose" style="padding: 80px 0 0"><p>Just when the world of Metal was like <em>no more</em>, everyone found out that rock bottom has a basement. While some were content with pretending to be Vikings, drinking from plastic drinking-horns while wearing tartan kilts, others got to thinking one day -- <em>why stop there?</em> The next logical step was of course to do -- you may have already guessed it -- the pirate thing. </p>
+<p>As you would expect, it's easy to do a Pirate Metal logo. Just do a <strong>skull and a crossbones</strong> logo, and you're golden. You may also think of adding a <strong>falchion</strong> or any other <strong>curved sword</strong> to really drive home that you're fully committed to doing the whole pirate thing. </p>
+<h5>Some Pirate bands to check out:</h5>
+<ul>
+<li>Alestorm
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Alestorm/116989" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/6ySfvnEGsR5keLq9f3i1AU?si=79f16ef6c6c446cf" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+
+<li>Running Wild
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Running_Wild/306" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/25qe3Wf24HVQBBiQeb9Cdf?si=3151ee56f2f0462a" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+
+<li>Swashbuckle
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Swashbuckle/45228" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/7eKlw1hs1t8ZfQu7Hn4TZ8?si=e7dfc1dbad8a47c4" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+</ul>
+
+<h5>Related (sub)genre(s):</h5>
+<div class="related"><a href="/FOLKMETAL/" class="rel"><span class="rimg"><img src="/assets/img/projects/proj-9/folk1.jpg" alt="Folk Metal sample logo" loading="lazy"></span><span class="rname">Folk Metal</span></a></div></article>
+<nav class="pn" aria-label="More entries" style="padding: 96px 0 0"><a href="/FOLKMETAL/" style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start; text-align: left; padding: 22px; border: 1px solid #262522; text-decoration: none"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8A397">← Previous entry</span><span style="font-family: 'Pirata One', serif; font-size: 30px; line-height: 1.1">Folk Metal</span></a><a href="/CUTEMETAL/" style="display: flex; flex-direction: column; gap: 6px; align-items: flex-end; text-align: right; padding: 22px; border: 1px solid #262522; text-decoration: none"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8A397">Next entry →</span><span style="font-family: 'Pirata One', serif; font-size: 30px; line-height: 1.1">Cute Metal</span></a></nav>
+<footer style="margin-top: 128px; padding: 88px 0 48px; border-top: 1px solid #262522; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px">
+<h2 style="margin: 0; font-family: 'Pirata One', serif; font-weight: 400; font-size: 64px; line-height: 1">Need a logo that speaks the right dialect?</h2>
+<p style="margin: 0; max-width: 560px; font-size: 18px; line-height: 1.6; color: #BDB8AC">Whether you play war metal or blackgaze, I'll draw you a logo your scene will recognize at a glance.</p>
+<a href="/#commission" style="padding: 16px 30px; background: #D9B35C; color: #0A0A0A; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.12em; text-transform: uppercase">Commission a logo</a>
+<div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; padding-top: 48px; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: #A8A397"><a href="/ILLEGIBLESEMANTICS/" style="padding: 10px 0">Read the paper</a><a href="https://www.youtube.com/watch?v=BZOdIhU-mrA" target="_blank" rel="noopener" style="padding: 10px 0">Watch the talk</a><a href="https://instagram.com/tundratoucan" target="_blank" rel="noopener" style="padding: 10px 0">Instagram</a><span style="padding: 10px 0">© Gerrit Rijken · Tundra Toucan</span></div>
+</footer>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Folk Metal and Viking Metal — The Genre Guide — Tundra Toucan</title>
+<meta name="description" content="How to recognize a Folk Metal and Viking Metal logo: a Genre Guide entry by Gerrit Rijken (Tundra Toucan).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&amp;family=Barlow+Condensed:wght@400;500;600&amp;family=Barlow:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0A0A0A}
+a{color:#E8E4DA}a:hover{color:#D9B35C}
+.hero-title{font-size:120px}
+.mosaic{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 22px}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.stats{display:flex;gap:40px;flex-wrap:wrap;justify-content:center}
+.card .art{transition:border-color .15s ease}
+.card:hover .art{border-color:#D9B35C}
+.card:hover .more{color:#D9B35C}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details[open] .plus{transform:rotate(45deg)}
+.nav{display:flex}
+.mnav{display:none}
+@media (max-width:1024px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:760px){
+.hero-title{font-size:64px}
+.mosaic{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mosaic>*:nth-child(n+4){display:none}
+.steps,.quotes{grid-template-columns:minmax(0,1fr)}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}
+.nav{display:none}
+.mnav{display:inline-block}
+.wrap{padding-left:16px !important;padding-right:16px !important}
+}
+
+.crumbs{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.ehero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start}
+.etitle{font-size:84px}
+.thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.prose{max-width:780px;margin:0 auto}
+.prose p,.prose li{font-size:18px;line-height:1.75;color:#BDB8AC}
+.prose p{margin:0 0 22px}
+.prose strong,.prose b{color:#E8E4DA;font-weight:500}
+.prose em,.prose i{color:#E8E4DA}
+.prose a{color:#D9B35C}
+.prose sup{color:#D9B35C;font-size:12px}
+.prose h1,.prose h2,.prose h3,.prose h4{font-family:'Pirata One',serif;font-weight:400;font-size:40px;line-height:1.05;color:#E8E4DA;margin:56px 0 18px}
+.prose h5,.prose h6{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:#D9B35C;margin:56px 0 18px;padding-top:20px;border-top:1px solid #262522}
+.prose img{display:block;width:100%;height:auto;background:#000;border:1px solid #262522;margin:26px 0;box-sizing:border-box}
+.prose blockquote{margin:0 0 26px;padding:6px 0 6px 22px;border-left:2px solid #D9B35C}
+.prose blockquote p{font-family:'Pirata One',serif;font-size:26px;line-height:1.3;color:#E8E4DA}
+.prose ol{list-style:none;padding:0;margin:0 0 26px;counter-reset:pt}
+.prose ol>li{counter-increment:pt;position:relative;padding-left:58px;margin:0 0 28px}
+.prose ol>li::before{content:counter(pt,upper-roman) ".";position:absolute;left:0;top:-6px;font-family:'Pirata One',serif;font-size:32px;color:#D9B35C}
+.prose ul{list-style:none;padding:0;margin:0 0 30px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.prose ul>li{border:1px solid #262522;padding:16px 16px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:19px;letter-spacing:.04em;text-transform:uppercase;color:#E8E4DA;line-height:1.2}
+.prose ul ul{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 0 0}
+.prose ul ul>li{border:0;padding:0;font-size:14px;letter-spacing:.12em}
+.prose ul ul a{color:#A8A397;text-decoration:none}
+.prose ul ul a:hover{color:#D9B35C}
+.prose details.more{margin:0 0 26px;border-top:1px solid #262522;border-bottom:1px solid #262522}
+.prose details.more>summary{cursor:pointer;list-style:none;padding:16px 0;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:#D9B35C}
+.prose details.more>summary::-webkit-details-marker{display:none}
+.prose details.more>summary::after{content:" +"}
+.prose details.more[open]>summary::after{content:" –"}
+.prose details:not(.more)>summary{cursor:pointer;color:#D9B35C;font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:10px 0}
+.prose .ref{font-size:14px;line-height:1.6;color:#8E8A80;margin:0 0 8px}
+.prose .ref em{color:#A8A397}
+.prose code{font-family:inherit}
+.related{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:0 0 30px}
+.rel{display:flex;flex-direction:column;gap:8px;text-decoration:none}
+.rel .rimg{display:block;aspect-ratio:1;background:#000;border:1px solid #262522;overflow:hidden}
+.rel img{display:block;width:100%;height:100%;object-fit:cover;margin:0;border:0}
+.rel .rname{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#E8E4DA;line-height:1.2}
+.rel:hover .rimg{border-color:#D9B35C}
+.pn{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+@media (max-width:760px){
+.ehero,.pn{grid-template-columns:minmax(0,1fr);gap:32px}
+.etitle{font-size:48px}
+.prose ul{grid-template-columns:minmax(0,1fr)}
+.related{grid-template-columns:repeat(3,minmax(0,1fr))}
+.prose ol>li{padding-left:44px}
+}
+</style>
+</head>
+<body id="top">
+<div style="background: #0A0A0A; color: #E8E4DA; font-family: 'Barlow', sans-serif; font-size: 16px; min-height: 100vh">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #262522">
+<a href="/" aria-label="Tundra Toucan home" style="display: block; line-height: 0"><img src="/assets/img/projects/proj-3/toucan2.png" alt="Tundra Toucan logo" style="display: block; width: 150px; height: auto"></a>
+<nav class="nav" style="gap: 28px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; align-items: center">
+<a href="/" style="text-decoration: none; padding: 12px 0">Home</a>
+<a href="/GENREGUIDE/" style="text-decoration: none; padding: 12px 0; color: #D9B35C">Genre guide</a>
+<a href="/#science" style="text-decoration: none; padding: 12px 0">Science of logos</a>
+<a href="/#commission" style="text-decoration: none; padding: 12px 18px; border: 1px solid #D9B35C; color: #D9B35C">Commission</a>
+</nav>
+<a href="/" class="mnav" style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; padding: 12px 0">← Home</a>
+</header>
+<div class="crumbs" style="padding: 28px 0 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8A397"><a href="/GENREGUIDE/" style="text-decoration: none; color: #D9B35C; padding: 8px 0">← The Genre Guide</a><span>/</span><span>Folk &amp; Oddities</span></div>
+<section class="ehero" style="padding: 40px 0 0">
+<div style="display: flex; flex-direction: column; gap: 10px"><div style="position: relative; background: #000000; border: 1px solid #262522; aspect-ratio: 1; overflow: hidden"><img src="/assets/img/projects/proj-9/folk1.jpg" alt="Folk Metal and Viking Metal sample logo" style="display: block; width: 100%; height: 100%; object-fit: cover"><span style="position: absolute; left: 12px; top: 10px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.14em; color: #D9B35C">No. 49</span></div></div>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.3em; text-transform: uppercase; color: #A8A397">Folk &amp; Oddities · Specimen No. 49</p>
+<h1 class="etitle" style="margin: 0; font-family: 'Pirata One', serif; font-weight: 400; line-height: 0.95">Folk Metal and Viking Metal</h1>
+<div style="display: flex; flex-direction: column; gap: 12px; padding-top: 22px; border-top: 1px solid #262522"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.16em; text-transform: uppercase; color: #D9B35C">Telltale signs</span><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 19px; line-height: 1.4; color: #E8E4DA"><li style="display: flex; gap: 10px"><span style="color: #D9B35C">†</span><span>lowercase blackletter or Celtic type</span></li><li style="display: flex; gap: 10px"><span style="color: #D9B35C">†</span><span>decorative curls</span></li></ul></div>
+</div>
+</section>
+<article class="prose" style="padding: 80px 0 0"><p>Closely related to the Pagan Metal is Folk Metal. Where they differ is that while Pagan Black Metal still kinda has the cool factor of Black Metal, Folk Metal has little to no coolness at all, and this shows in the logos. They often take their inspiration from Black Metal aesthetics, with logos made of <strong>lowercase blackletters</strong> or some <strong>Celtic type</strong>, with only <strong>some degree of symmetry</strong> on both opposite ends of the logo, if at all, and even then usually through <strong>decorative curls</strong> rather than through cool letter design. <br />
+<img alt="Folk Metal" src="/assets/img/projects/proj-8/folk.jpg" /></p>
+<p><em>Don't bother reading the following updates unless (1) you got too much time on your hands or (2) enjoy reading polemics.</em></p>
+<details class="more">
+<summary>Update 1</summary>
+<p>A friend of mine felt I was too harsh on Folk Metal, so I did what any scientist would do: I gave it another chance. I'm a scientist now, after all -- I mean, I did get a paper published. Anyway. Good science demands honesty. It demands that we suspend judgment until we know the facts. 
+<br><br>
+Well now my friend, who is himself a talented musician, made a compelling argument that Folk Metal musicians are often or usually talented in what they do. Sadly, what they do is play Folk Metal. And that brings us back to where we started. A bit of a circular argument, I know, but can you blame me when all I see when I think of Folk Metal are circles and polka dots? In case the joke went over your head: <strong>Finntroll</strong>, one of the first Folk Metal bands to gain international notoriety, play what is often referred to as Polka Metal on account of them integrating <em>huumpa</em> (Finnish polka melodies) with Black Metal.
+<br><br>
+The thing with Folk Metal is that it juxtaposes acoustic components, i.e. acoustic folk instruments such as violin, accordion, flute, bagpipe, and kantele, with the power and electronic distortion of Heavy Metal. Some people think it's cool and some people don't. (Actually, <em>most</em> people don't.) Music critic Scott Seward is one of the former. You ask him and he will tell you that contemporary folk "too often lack the fierceness and meatiness of music born from blood and fire and plague."<sup>1</sup> Meanwhile, listening to a Folk Metal band like <strong>Korpiklaani</strong> sends him "instantly back to a time when trolls ruled the woods." Well I got news for you, Scott. Trolls never ruled the woods. In fact, trolls never even existed! And you call yourself a critic? How about next time you do your due diligence and research your claims! It's what I did and, well -- it persuaded me that my bias was indeed correct. 
+<br><br>
+I will say this much, if there's one thing you can count on it's that whoever is playing the accordion, or the violin, is probably a hot smoking babe. (Call me!)
+<br><br></p>
+</details>
+<details class="more">
+<summary>Update 2</summary>
+<p>A few days have passed since I updated this entry. I thought the matter was settled satisfactorily to all concerned. I thought wrong. I had another discussion with my friend who still felt I was wrong in claiming that Folk Metal is cheesy music, and, well -- being the obsessed nut that I am, I decided to put this matter to bed.
+<br><br>
+The crux of my friend's argument is that Folk Metal is not just Polka Metal; according to him, the genre also covers certain bands that take a more serious approach to their music making. And, to illustrate this, he mentioned two examples: <strong>Falkenbach</strong> and <strong>Moonsorrow</strong>. I contested this by saying that surely these bands play Pagan Black Metal, not Folk Metal. We agreed to disagree over the issue, which left the matter open for further discussion. But now I'm going to close it once and for all.
+<br><br>
+All right. I did some digging into Pagan (Black) and Folk Metal and specifically the bands my friend mentioned; and the results are murky and far from clear-cut.
+<br><br>
+Let's begin by stating that the music played by Pagan Metal is varied. In my research on Pagan Metal, I chanced upon a book chapter in which the author uses a dataset of 1538 bands that, in 2013, were labeled as "Pagan Metal" in the online Encyclopedia Metallicum. Of these 1538 bands the author notes that "some list their style as black metal (34.3) per cent) or death metal (1.2 per cent). Many others report a complex style, describing their music as 'Pagan black/death metal', 'folk black/death metal', among many others."<sup>2</sup> The author then continues: "While 2.4 per cent call their style 'folk metal', another 10.1 per cent use the word 'folk' in addition to other terms. Among the other descriptors used with other styles are 'doom' (3.0 per cent), 'Viking' (3.5 per cent), 'symphonic' (1.8 per cent), 'ambient' (4.0 per cent) and 'death' (7.4 per cent)." Those sure are a lot of numbers, but wait, the author mentions even more numbers! "The term 'Pagan' as an adjectival descriptor -- as in 'Pagan black metal', for example -- is used by 36.1 per cent of the bands, but none uses it to name a standalone style. [None except <strong>Moonsorrow</strong>, apparently. But we'll get to that soon enough, G.] Similarly, 12.4 per cent of the bands use 'folk' as an adjectival descriptor. The adjectival use of both terms here probably means the incorporation of some folk instruments and/or melodies into the metal. (Since some describe their music style with terms like 'National Socialism', the terms 'Pagan' or 'folk' may, for some bands, have nothing to do with their sound.)"
+<br><br>
+All right. So now we know that "Pagan Black" is a relatively popular term; "Folk" decidedly less so. But what does that really say? The "scene" could be teeming Pagan (Black) Metal bands, but if they all suck at writing music and lyrics, then it means nothing at all. Right? This brings me to the first problem. These numbers don't paint the full picture. These words -- "Pagan (Black)" and "Folk" -- they don't tell the full story. They are just labels that we use to characterize bands. I deem it likely, however, that people often talk about the exact same bands when talking Pagan (Black) or Folk Metal, though we perhaps may never agree on a given band's genre label. For example, I was pretty sure that <strong>Moonsorrow</strong> was (is) a Pagan Black Metal band. So ... 
+<br><br>
+Let's just look at what <strong>Moonsorrow</strong> and <strong>Falkenbach</strong>, those two bands that my friend speaks so highly of, have to say about genre labels.</p>
+<p><br><br>
+In at least one interview, <strong>Moonsorrow</strong> identify themselves as a Pagan Metal band, not a Folk Metal band. Says Ville Sorvali, the band's frontman: "[W]e definitely consider ourselves to be a Pagan Metal band. It's a nice, broad definition that does not limit the music. And well, the Pagan word is quite obvious because we are -- well, we are modern Pagans. And well, the believe in the gods; we believe in Nature. The Black Metal thing is, well we could never be or never were a Black Metal band, but we have a lot of influence on a personal level  from Black Metal, particularly Black Metal from Norway in the 1990's. So there is always a Black Metal heart beating behind the sound of Moonsorrow."<sup>3</sup> So, not a Folk Metal band, not Pagan Black, either. Just Pagan. 
+<br><br>
+Once in an interview with Metal Sound Magazine Markus "Vratyas Vakyas" Tümmers, the creative force behind one-man band known as <strong>Falkenbach</strong>, had this to say when asked to compare the band's albums up until then: "'En their...' is a rougher album, also the songs are faster here and there. The 2nd album 'Magni...' came up with a different sound, more power for the guitars, a bit less black metal influences music wise. The 3rd album 'Ok nefna...' turned out to be a more of folk inspired album, with a lot of acoustic guitars, choirs and so on, and with less important distorted guitars, though it's still a metal album in the end."<sup>4</sup>
+<br><br>
+And in another interview with SpazioRock, he said when asked about the band's origins: "At the beginning [...] <strong>Falkenbach</strong> was only folk, the metal influences grew with the years."<sup>5</sup> The one-man began playing in 1989, by the way. This lends credence to one observer's remark that they even pioneered Folk Metal.<sup>6</sup> At any rate, it's fair to suppose, then, that Falkenbach plays Folk Metal, right? Well, not entirely. 
+<br><br>
+After all, Vratyas Vakyas did note there once were at least Black Metal influences in his approach -- no real surprise there because Folk Metal is essentially an offshoot of Black Metal.<sup>7</sup> So how should we label <strong>Falkenbach</strong>, then? Blackened Folk?
+<br><br>
+But wait -- it gets even more confusing when you see that <strong>Falkenbach</strong> also gets labeled as a Pagan Metal band, or, somewhat synonymously, as an "Asa-Metal" band.<sup>8</sup> (Yeah, I had to look it up, too. Apparently, "Asa" is short for "Ásatrú," a word used to denote Germanic Neopaganism, which is a revival of the old Germanic religion.) And it doesn't end there.
+<br><br>
+Some sources put the band in the Viking (Black) Metal genre.<sup>9</sup> Viking Metal? Great, just what we needed. Another ill-defined genre that distinguishes itself from Pagan Metal not so much by its sound characteristics as by its content, "which is why categorizations may sometimes come out as controversial."<sup>10</sup> (Exactly! This is getting way too academic, for fuck's sake!)
+<br><br>
+Ultimately it boils down to a difference in taste or opinion. Do you enjoy (traditional) folk melodies? And if yes, do you want your artists to meld them with the distorted guitars and synthesizers of Heavy Metal? If yes to both, then you may like Folk Metal. Personally I draw the line at Pagan lyrics. 
+<br><br>
+(Sigh.) That's it. I'm done. I did my part.</p>
+</details>
+<h5>Some Folk Metal bands to check out:</h5>
+<ul>
+<li>Eluveitie
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Eluveitie/13991" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/0vTEksNDRuJxDMLOOgn0fA?si=629709f8feb140a0" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+
+<li>Finntroll
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Finntroll/95" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/5ft8Pv91JaqLvxRxzzQ5dp?si=e6975814404c4780" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+
+<li>Korpiklaani
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Korpiklaani/17431" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/artist/521Yl3LUvD7G9dMRO4fpCy?si=b668970904154c45" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+</ul>
+
+<h5>Related (sub)genre(s):</h5>
+<div class="related"><a href="/BLACKMETAL/" class="rel"><span class="rimg"><img src="/assets/img/projects/proj-9/black12.jpg" alt="Black Metal sample logo" loading="lazy"></span><span class="rname">Black Metal</span></a><a href="/PIRATEMETAL/" class="rel"><span class="rimg"><img src="/assets/img/projects/proj-9/pirate.jpg" alt="Pirate Metal sample logo" loading="lazy"></span><span class="rname">Pirate Metal</span></a></div>
+
+<h3>Folk Metal and Viking Metal (Continued)</h3>
+<p>Some Folk bands take things to the next level by incorporating <strong>viking helmets</strong> and <strong>drinking-horns</strong> in their logos to signal to people, "When you come to our show, you're free to live out your viking fantasy vicariously. By all means, bring your plastic drinking-horn!" And why wouldn't you, if you're a fan of Folk Metal. You've already ostracized yourself from typical metalheads anyway, you may as well commit to the LARP thing.</p>
+<p><img alt="Folk Metal" src="/assets/img/projects/proj-8/folk2.jpg" /></p>
+<p>Although a logo like this may give the impression that you're actually dealing with a Viking Metal band, this doesn't necessarily have to be so because it can still be a Folk Metal band. Now this is where things can get confusing ... </p>
+<p>Folk Metal is an offshoot of Black Metal in which traditional folk instruments and melodies are dominant, often to the point where there's no trace left of the old Black Metal spirit. Now think of Black Metal and Folk Metal as two opposite ends of a single continuum on which Pagan (Black) Metal bands fall, leaning more on the Black Metal side of the continuum than the other. </p>
+<p>When a Pagan (Black) Metal band's content deals with Norse or Viking mythology instead of Neo-Pagan mythology and way of life -- that's when we're dealing with a Viking metal band. After all, what is a Pagan but a Viking without a ship?</p>
+<p>True enough, the German "Asa" (i.e. Germanic neo-Pagan) Metal band <strong>Falkenbach</strong>, a band that pioneered the Folk Metal genre, have quite often been labeled as a Viking Metal band by media outlets and scholars (see Update 2 above).</p>
+<p>But wait! What if a Folk Metal band's lyrics are a loveletter to Scandinavian national romanticism? Well, then that band, too, is a Viking Metal band. (Unless the band is called <strong>Ensiferum</strong>. They don't call themselves Viking Metal, instead preferring the label of "Melodic Folk Metal.") </p>
+<p>Indeed, depending on a given band's content, Viking Metal can be anything from Black(ish) Metal (<strong>Enslaved</strong>, <strong>Naglfar</strong>) to Folk(ish) Metal (<strong>Einherjer</strong>, <strong>Windir</strong>), to even Death(ish) Metal (<strong>Amon Amarth</strong>, <strong>Unleashed</strong>); and this because it's a superficial crossgenre label that encompasses just about every band dealing with viking-age Scandinavia on whatever level. </p>
+<p>This isn't really helping, is it? I thought as much, which is why I already prepared something in advance to help you understand it more clearly. If you want to know if you're dealing with a Black, Pagan, Folk, or Viking Metal band, you just have to ask yourself one question or two actually: <strong>If I am a non-drinker, will I enjoy this? Or should I start drinking?</strong></p>
+<p><img alt="Folk Metal" src="/assets/img/blog/howdrunk.jpg" /></p>
+<p>Show me the <a href="/assets/img/blog/howdrunk.jpg" target="_blank" rel="noopener"><span>bigger picture</span></a>.<sup>11</sup></p>
+<h5>Some Folk Metal bands to check out:</h5>
+<ul>
+<li>Enslaved
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Enslaved/104" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/27vcwfCcgCaso2A0hifBT9?si=88f12640dace4f35" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+
+<li>Unleashed
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Unleashed/359" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/1SvsK5tkR5R73DOAcsW8wz?si=4c3405497d244534" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+
+<li>Windir
+<ul>
+<li><a href="https://www.metal-archives.com/bands/Windir/360" target="_blank" rel="noopener"><span>Band information</span></a></li>
+<li><a href="https://open.spotify.com/track/6heyQdo27FXSVTR0VS5F5H?si=9d196e003a664c9a" target="_blank" rel="noopener"><span>Spotify</span></a></li>
+</ul>
+</li>
+</ul>
+
+<h5>Related (sub)genre(s):</h5>
+<div class="related"><a href="/BLACKMETAL/" class="rel"><span class="rimg"><img src="/assets/img/projects/proj-9/black12.jpg" alt="Black Metal sample logo" loading="lazy"></span><span class="rname">Black Metal</span></a><a href="/MELODICDEATH/" class="rel"><span class="rimg"><img src="/assets/img/projects/proj-9/melodic.jpg" alt="Melodic Death Metal sample logo" loading="lazy"></span><span class="rname">Melodic Death Metal</span></a><a href="/PAGANBLACK/" class="rel"><span class="rimg"><img src="/assets/img/projects/proj-9/pagan.jpg" alt="Pagan Black Metal sample logo" loading="lazy"></span><span class="rname">Pagan Black Metal</span></a></div>
+
+<h5>Reference(s):</h5>
+<p class="ref">[1] T. Neilson. Where Myth and Metal Collide: Finnish Folk Metal. In S.A. Wilson, ed. <em>Music at the Extremes: Essays on Sounds Outside the Mainstream</em>, p. 136, 2015. </p>
+<p class="ref">[2] D. Weinstein. Ch. 5: Pagan Metal. In D. Weston and A. Bennett, ed. <em>Pop Pagans: Paganism and Popular Music</em>, 2013.</p>
+<p class="ref">[3] N. Franco. Cryptic Rock: Interview: Ville Sorvali of Moonsorrow. https://crypticrock.com/interview-ville-sorvali-of-moonsorrow, 2016.</p>
+<p class="ref">[4] M. Miranovic. Metal Sound Magazine: Falkenbach: Heathen Pride https://metal-sound.net/falkenbach-heathen-pride, 2005.</p>
+<p class="ref">[5] F. Petrella. SpazioRock: Falkenbach (Vratyas Vakyas). http://www.spaziorock.it/intervista.php?&amp;id=330&amp;eng=1, 2011.</p>
+<p class="ref">[6] D.L. Paxson. Essential Asatru: A Modern Guide to Norse Paganism, 2021.</p>
+<p class="ref">[7] M. Taylor. Eternal Defiance: Celtic Identity and the Classical Past in Heavy Metal. In K.F.B. Fletcher and O. Umurhan, ed. Introduction: Where Metal and Classics Meet. In <em>Classical Antiquity in Heavy Metal Music</em>, p. 72, 2020.</p>
+<p class="ref">[8] S. von Hoyningen-Huene. <em>Religiosität bei rechtsextrem orientierten Jugendlichen</em>, p. 247, 2002.</p>
+<p class="ref">[9] A. Buchy. Camion blanc: Bathory: The Root of Darkness and Evil, 2011; S. Yandell. The Future <em>Is</em> What It Used to Be: Medieval Prophecy and Popular Culture. In D.W. Marshall, ed. <em>Mass Market Medieval: Essays on the Middle Ages in Popular Culture</em>, p. 68, 2007; D. Patterson. Enslaved: Folk and Folklore in Black Metal Part I. In <em>Black Metal: Evolution of the Cult</em>, 2013; and K.F.B. Fletcher O. Umurhan, ed. Introduction: Where Metal and Classics Meet. In <em>Classical Antiquity in Heavy Metal Music</em>, 2020. </p>
+<p class="ref">[10] I.-M. Manea. Primal Roots: Ancestry and Race in Extreme Music Discourse. In <em>Proceedings of IAC-SSaH 2015: International Academic Conference on Social Sciences and Humanities in Prague 2015</em>, p. 188, 2015.</p>
+<p class="ref">[11] These pictures were lifted from an April 2014 article on Independent online. A. Molloy. Independent: Feeling disgustedly surprised? Scientists identify 21 facial expressions. https://www.independent.co.uk/news/science/feeling-disgustedly-surprised-scientists-identify-21-facial-expressions-9227589.html, 2014.</p></article>
+<nav class="pn" aria-label="More entries" style="padding: 96px 0 0"><a href="/FUNKMETAL/" style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start; text-align: left; padding: 22px; border: 1px solid #262522; text-decoration: none"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8A397">← Previous entry</span><span style="font-family: 'Pirata One', serif; font-size: 30px; line-height: 1.1">Funk Metal</span></a><a href="/PIRATEMETAL/" style="display: flex; flex-direction: column; gap: 6px; align-items: flex-end; text-align: right; padding: 22px; border: 1px solid #262522; text-decoration: none"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8A397">Next entry →</span><span style="font-family: 'Pirata One', serif; font-size: 30px; line-height: 1.1">Pirate Metal</span></a></nav>
+<footer style="margin-top: 128px; padding: 88px 0 48px; border-top: 1px solid #262522; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px">
+<h2 style="margin: 0; font-family: 'Pirata One', serif; font-weight: 400; font-size: 64px; line-height: 1">Need a logo that speaks the right dialect?</h2>
+<p style="margin: 0; max-width: 560px; font-size: 18px; line-height: 1.6; color: #BDB8AC">Whether you play war metal or blackgaze, I'll draw you a logo your scene will recognize at a glance.</p>
+<a href="/#commission" style="padding: 16px 30px; background: #D9B35C; color: #0A0A0A; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.12em; text-transform: uppercase">Commission a logo</a>
+<div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; padding-top: 48px; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: #A8A397"><a href="/ILLEGIBLESEMANTICS/" style="padding: 10px 0">Read the paper</a><a href="https://www.youtube.com/watch?v=BZOdIhU-mrA" target="_blank" rel="noopener" style="padding: 10px 0">Watch the talk</a><a href="https://instagram.com/tundratoucan" target="_blank" rel="noopener" style="padding: 10px 0">Instagram</a><span style="padding: 10px 0">© Gerrit Rijken · Tundra Toucan</span></div>
+</footer>
+</div>
+</div>
+</body>
+</html>
