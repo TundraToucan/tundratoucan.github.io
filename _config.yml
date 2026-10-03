@@ -8,7 +8,9 @@ plugins:   [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 
 title:		   "Tundra Toucan"
-description: "Tundra Toucan's Logos and Illustrations"
+description: "Custom black metal and death metal logos, album covers and merch art by Gerrit Rijken (Tundra Toucan)."
+url:         "https://tundratoucan.github.io"
+lang:        "en"
 author:      "Gerrit Rijken"
 
 # Genre Guide: the old Markdown versions are replaced by the new
